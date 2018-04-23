@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Catalogo de Objetos HTML con CSS</title>
+		<!--PARAMETROS PARA AJUSTAR TAMAÑO DE PANTALLA Y TIPOGRAFIA-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--HOJAS DE ESTILOS EXTERNOS: BOOTSTRAP Y FUENTES, NECESARIA CONEXION A RED-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+		<!--SCRIPTS EXTERNOS: JQUERY Y BOOTSTRAP, NECESARIA CONEXION A RED-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="css/estilos.css" rel="stylesheet" type="text/css">
+	</head>
+	<!--ACTUALIZAR LINKS DE NAVEGACION AUTOMATICAMENTE-->
+	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+		<!--BARRA DE NAVEGACION-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<!--BOTON PRINCIPAL DE TITULO-->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#myPage">TITULO</a> 
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<!--DIFERENTES SECCIONES DE LA PAGINA. PUEDE DIRECCIONAR A OTRAS PAGINAS-->
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#myPage"><span class="glyphicon glyphicon-user"></span>PERFIL</a></li>
+						<li><a href="#intro">SIGUIENTE</a></li>
+						<li><a href="#seccion">SECCION</a></li>
+						<li><a href="#footer">PIE DE PAGINA</a></li>
+						<!--DESPLEGAR LISTA DE LINKS DE NAVEGACION-->
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">VER MÁS<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#3colum">3 COLUMNAS</a></li>
+								<li><a href="#formul">FORMULARIO</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--FIN DE BARRA DE NAVEGACION-->
+		<!-- CARUSEL, MOSTRAR BARRA DE IMAGENES CON TEXTO-->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!--LISTA DE IMAGENES-->
+            <ol class="carousel-indicators">
+            	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      			<li data-target="#myCarousel" data-slide-to="1"></li>
+      		</ol>
+			<div class="carousel-inner" role="listbox">
+				<!--IMAGEN CON TEXTO-->
+				<div class="item active">
+					<!--IMAGEN ACTIVA O PRINCIPAL-->
+					<img class="1img" src="images/bootstrap.jpg" alt="Img">
+					<div class="carousel-caption">
+						<!--TEXTO DE LA IMAGEN-->
+						<h3 class="black">TITULO COLOR NEGRO</h3>
+						<p class="black">PARRAFO COLOR NEGRO</p>
+					</div>
+				</div>
+				<!--FIN IMAGEN-->
+                <div class="item">
+					<!--IMAGEN ACTIVA O PRINCIPAL-->
+					<img class="1img" src="images/js.gif" alt="gif">
+					<div class="carousel-caption">
+						<!--TEXTO DE LA IMAGEN-->
+						<h3 class="black">TITULO COLOR NEGRO</h3>
+						<p class="black">PARRAFO COLOR NEGRO</p>
+					</div>
+				</div>
+			</div>
+			<div id="intro" class="container text-center">
+				<!--SECCION DE PAGINA CON TEXTO CENTRADO-->
+				<h3>TITULO CON COLOR GRIS</h3>
+				<p><em>LETRA CURSIVA</em></p>
+				<p>PARRAFO COLOR GRIS</p>
+				<br>
+				<div class="row">
+					<!--CREA UNA FILA-->
+					<div class="col-sm-6">
+						<!--DIVISION DEL GRID EN 2 COLUMNAS-->
+						<p class="text-center"><strong>COLUMNA 1</strong></p>
+						<br>
+						<!--INSERTAR IMAGEN CON TEXTO ESCONDIDO-->
+						<a href="#demo" data-toggle="collapse"> <img src="images/image1.jpg" class="img-circle image" alt="Mensajes" width="255" height="255"> </a>
+						<div id="demo" class="collapse">
+							<p>AL DAR CLICK EN LA IMAGEN APARECE TEXTO</p>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<p class="text-center"><strong>COLUMNA 2</strong></p>
+						<br>
+						<a href="#demo2" data-toggle="collapse"> <img src="images/image2.png" class="img-circle image" alt="Abecedario" width="255" height="255"> </a>
+						<div id="demo2" class="collapse">
+							<p>AL DAR CLICK EN LA IMAGEN APARECE TEXTO</p>
+						</div>
+					</div>
+				</div>
+				<!--FIN DE LA DIVISION DE FILAS-->
+			</div>
+			<!--FIN SECCION-->
+			<div id="seccion" class="bg-1">
+				<!--SECCION CON FONDO NEGRO-->
+				<div class="container">
+					<!--GENERAR ESPACIADO-->
+					<h3 class="text-center">TITULO</h3>
+					<p class="text-center">CREAR LISTA</p>
+					<!--LISTA-->
+					<ul class="list-group">
+						<li class="list-group-item"><strong>Título A.</strong><br>Cuerpo del texto.</li>
+      					<li class="list-group-item"><strong>Título B</strong><br>Cuerpo del texto.</li>
+      					<li class="list-group-item"><strong>Título C</strong><br>Cuerpo del texto.</li> 
+     				 	<li class="list-group-item"><strong>Título D</strong><br>Cuerpo del texto.</li> 
+					</ul>
+					<!--FIN LISTA-->
+				</div>
+				<!--FIN DIVISOR CON TEXTO COLOR BLANCO-->
+			</div>
+			<!-- FIN SECCION FONDO NEGRO-->
+			<!--EJEMPLO DE SECCION CON 3 COLUMNAS-->
+			<div id="3colum" class="bg-2">
+				<div class="container">
+					<h3 class="text-center">SECCION</h3>
+					<p class="text-center">CONTIENE 3 COLUMNAS</p>
+					<div class="row text-center">
+						<div class="col-sm-4">
+							<!--DIVISION DEL GRID EN 3 COLUMNAS-->
+							<div class="thumbnail">
+								<!--MINIATURA DE IMAGENES-->
+								<img src="images/admin1.jpg" alt="Cuadrícula" width="400" height="300">
+								<p><strong>COLUMNA 1</strong></p>
+								<!--PIE DE FOTO-->
+								<p>EJEMPLO DE BOTON</p>
+								<button class="btn" data-toggle="modal" data-target="#myModal">POPUP</button><!--TIPO DE BOTON-->
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumbnail">
+								<img src="images/admin2.jpg" alt="Características" width="400" height="300">
+								<p><strong>TIPO DE BOTON 2</strong></p>
+								<button class="btn btn-block bg-blue" data-toggle="modal" data-target="#myModal1">TABLAS</button>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumbnail">
+								<img src="images/admin3.jpg" alt="Ejemplo" width="400" height="300">
+								<p><strong>TIPO DE BOTON 3</strong></p>
+								<button class="btn btn-primary disabled bg-black" data-toggle="modal" data-target="#myModal2">Ver más</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- EJEJMPLO DE MODAL O POPUP -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog modal-lg">
+					<!-- CONTENIDO-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<!--HEAD-->
+							<button type="button" class="close" data-dismiss="modal">×</button>
+							<h4><span class="glyphicon glyphicon-list"></span> Cuadrícula</h4>
+						</div>
+						<div class="modal-body">
+							<!--CUERPO-->    
+							<img src="images/gridb.jpg" alt="Grid" width="800" height=500">
+						</div>
+						<div class="modal-footer">
+							<!--PIE DE PAGINA-->
+							<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+							<span class="glyphicon glyphicon-remove"></span> Cerrar
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <div class="modal fade" id="myModal1" role="dialog">
+				<div class="modal-dialog modal-lg">
+					<!-- CONTENIDO-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<!--HEAD-->
+							<button type="button" class="close" data-dismiss="modal">×</button>
+							<h4><span class="glyphicon glyphicon-list"></span> Tabla</h4>
+						</div>
+						<div class="modal-body table-responsive">
+							<!--CREAR TABLA CON ESTILO DE SELECCION-->    
+        						<table class="table table-hover">
+                        	    <thead>
+                            	    <tr>
+                                	    <th>Inicial</th>
+                       		            <th>Final</th>
+                            	        <th>Valor</th>
+                                	</tr>
+                      	      	</thead>
+                             	<tbody>
+                                	<tr>
+                                    	<td>Opcion1</td>
+                                        <td>Texto1</td>
+                                        <td>Dato1</td>
+                                	</tr>
+                                    <tr>
+                                    	<td>Opcion2</td>
+                                        <td>Texto2</td>
+                                        <td>Dato2</td>
+                                    </tr>
+                           	 	</tbody>
+                        	</table>
+                        </div>
+						<div class="modal-footer">
+							<!--PIE DE PAGINA-->
+							<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+							<span class="glyphicon glyphicon-remove"></span> Cerrar
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+                        
+		<!--DIFERENCIA VISUAL DEL CONTENIDO, GENERA UN MARCO DE FONDO BLANCO-->
+		<div id="formul" class="bg-3 container">
+			<h3 class="text-center">FORMULARIOS</h3>
+			<p class="text-center">EJEMPLO DE FORMULARIO</p>
+            <!--FORMULAFIO DE FORMA HORIZONTAL, ETIQUETAS NECESARIAS .CONTROL-LABEL, .FORM-CONTROL-->
+            <form action="" class="form-horizontal">
+            <div class="form-group">
+    			<label class="control-label col-sm-2" for="email">Email:</label>
+    			<div class="col-sm-10">
+      				<input type="email" class="form-control" id="email" placeholder="Ingresa Correo">
+    			</div>
+  			</div>
+  			<div class="form-group">
+    			<label class="control-label col-sm-2" for="pwd">Password:</label>
+    			<div class="col-sm-10"> 
+      				<input type="password" class="form-control" id="pwd" placeholder="Ingresa password">
+    			</div>
+  			</div>
+  			<div class="form-group"> 
+    			<div class="col-sm-offset-2 col-sm-10">
+      				<div class="checkbox">
+        				<label><input type="checkbox"> Checkbox</label>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="form-group"> 
+   				<div class="col-sm-offset-2 col-sm-10">
+      				<button type="submit" class="btn">Ingresar</button>
+    			</div>
+  			</div>
+            </form>
+            <br>
+            <form>
+            <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+            </div>
+            <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <br>
+            <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+            <input id="msg" type="text" class="form-control" name="msg" placeholder="Información">
+            </div>
+            <br>
+            <div class="input-group">
+            <span class="input-group-addon">Texto</span>
+            <textarea class="form-control textarea" rows="5" id="comen"></textarea>
+            </div>
+            <label for="sel1">Seleccione:</label>
+            <select class="form-control" id="sel1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            </select>
+            </form>
+            <br>
+		</div>
+		<!--PIE DE PAGINA-->
+		<div id="footer"></div>
+		<footer class="text-center">
+			<!--MOSTAR EL INICIO-->
+			<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="AL INICIO"> <span class="glyphicon glyphicon-chevron-up"></span> </a>
+			<br>
+			<br>
+			<p>José Rafael Canchola Angeles</p> 
+  			<p>Alonso Carrillo Ruíz</p>
+		</footer>
+		<!--FIN PIE DE PAGINA-->
+		<!--ANIMACION FOOTER-->
+		<script>
+			$(document).ready(function() {
+			$('[data-toggle="tooltip"]').tooltip();
+			$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+			if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+			scrollTop: $(hash).offset().top
+			}, 900, function() {
+			window.location.hash = hash;
+			});
+			}
+			});
+			});
+		</script>
+		<!--FIN ANIMACION FOOTER-->
+		</div>
+	</body>
+</html>
